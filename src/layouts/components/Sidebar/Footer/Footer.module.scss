@@ -1,0 +1,25 @@
+.Footer {
+    padding-top: 16px;
+    padding-left: 8px;
+    font-weight: 550;
+    font-size: 1.2rem;
+    line-height: 20px;
+    margin-left: -5px;
+    color: rgb(176, 177, 186);
+}
+
+.title-footer {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.title-footer a {
+    margin-right: 5px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

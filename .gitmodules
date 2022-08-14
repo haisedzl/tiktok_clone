@@ -1,0 +1,3 @@
+[submodule "tiktok_ui"] 
+  path = tiktok_ui 
+  url = git@github.com:haisedzl/tiktok_ui.git
