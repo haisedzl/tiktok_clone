@@ -7,40 +7,40 @@ import useElementOnScreen from './HandleVideo';
 
 const cx = classNames.bind(styles);
 
+
+
 function ContenVideo() {
     const videoRef = useRef();
-    const [playing, setPlaying] = useState(true);
-    const handleVideo = () => {
-        if (playing) {
-            videoRef.current.pause();
-            setPlaying(false);
-        } else {
-            videoRef.current.play();
-            setPlaying(true);
-        }
-    };
+  const [playing, setPlaying] = useState(false);
+  const handleVideo = () => {
+    if (playing) {
+      videoRef.current.pause();
+      setPlaying(false);
+    } else {
+      videoRef.current.play();
+      setPlaying(true);
+    }
+  };
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.3,
+  };
+  const isVisibile = useElementOnScreen(options, videoRef);
 
-    const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.3,
-    };
-    const isVisibile = useElementOnScreen(options, videoRef);
-
-    useEffect(() => {
-        if (isVisibile) {
-            if (!playing) {
-                videoRef.current.play();
-                setPlaying(true);
-            }
-        } else {
-            if (playing) {
-                videoRef.current.pause();
-                setPlaying(false);
-            }
-        }
-    }, [isVisibile]);
-
+  useEffect(() => {
+    if (isVisibile) {
+      if (!playing) {
+        videoRef.current.play();
+        setPlaying(true);
+      }
+    } else {
+      if (playing) {
+        videoRef.current.pause();
+        setPlaying(false);
+      }
+    }
+  }, [isVisibile]);
     return (
         <div className={cx('conten-video')}>
             <video

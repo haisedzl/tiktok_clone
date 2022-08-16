@@ -1,0 +1,60 @@
+.right-app {
+    right: 24px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 8px;
+    transform: none;
+    transition: all 400ms cubic-bezier(0.65, 0, 0.35, 1) 0s;
+}
+
+.get-app {
+    border: none;
+    background: none;
+    outline: none;
+    color: rgba(22, 24, 35, 0.75);
+    font-family: ProximaNova,Arial,Tahoma,PingFangSC,sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    padding: 0 8px;
+    min-width: 90px;
+    height: 32px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+    border-radius: 52px;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    white-space: nowrap;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(22, 24, 35, 0.12);
+    background-color: rgba(255, 255, 255, 1.0);
+}
+
+
+.up-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    border-radius: 52px;
+    background: rgba(254, 44, 85, 1.0);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
