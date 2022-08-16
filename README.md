@@ -1,3 +1,29 @@
+# HELLO, WELLCOME TO PROJECT FOR ME, I'M HAISE
+
+- trong project ngoài REACTJS  tôi còn sử dụng khá nhiều thư viện như : classname, sass, axios, tippy, normalize 
+- tôi thực hiện project này dựa trên nguyên mẫu của tiktok hiện tại:
+- các chức năng tôi xây dựng được :
+- cấu hình router 1 cách hoàn chỉnh.
+- xây dựng được chức năng tìm kiếm.
+- về phần video : play, pause , tự động phát khi xuống video tiếp và tắt video đang xem ở trên.
+- về phần iu thì gần như hoàn thiện mặt trang chủ, 
+- Nếu bạn đang xem ở vercel mà ko có video thì rất là xin lỗi vì sự chẫm chễ trong việc tìm kiếm và thiết kế API.
+- Tôi sẽ hoàn thành nó một cách sớm nhất có thể. cảm ơn bạn đã xem !!
+- 
+                                           # CHÚC BẠN CÓ MỘT NGÀY VUI
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
