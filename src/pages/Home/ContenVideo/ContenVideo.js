@@ -48,7 +48,7 @@ function ContenVideo() {
                 onClick={handleVideo}
                 className={cx('video')}
                 loop
-                src="https://v16-webapp.tiktok.com/41013765f32b655c2e33b3bf41ec0490/62f64588/video/tos/maliva/tos-maliva-ve-0068c799-us/7b88a8c83b6242b69b6ec54f06cd5f8a/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1686&bt=843&cs=0&ds=3&ft=eXd.6Hk_Myq8ZBsyHwe2NgCQml7Gb&mime_type=video_mp4&qs=0&rc=ZDtoOzM8OzhoaDg7O2Y6aUBpM3Y5Zjs6ZnE7ZTMzZzczNEAuM2A1NmAxNTYxYGJfLV9gYSNtYG5gcjQwZG5gLS1kMS9zcw%3D%3D&l=202208120620140102510031480301C254&btag=80000"
+                src='https://v16-webapp.tiktok.com/5c5ce64a852feff633609863dd3fc9c7/62fc7574/video/tos/maliva/tos-maliva-ve-0068c799-us/0f7628e760be46739360954adff6e532/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=3566&bt=1783&cs=0&ds=3&ft=eXd.6Hk_Myq8ZasoOwe2NSkhml7Gb&mime_type=video_mp4&qs=0&rc=OGQ8aDRpN2Q4ZjQ7aTxnZUBpanFrdGQ6ZnZvZTMzZzczNEAxNmIxLWBjNmExYGE0M2EvYSMtZmo2cjRvMHFgLS1kMS9zcw%3D%3D&l=2022081622581101024524603622671F50&btag=80000'
             />
             <div className={cx('icon-conten')}>
                 <FontAwesomeIcon className={cx('icon')} icon={faHeart} />
