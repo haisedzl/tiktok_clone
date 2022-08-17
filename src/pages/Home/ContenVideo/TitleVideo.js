@@ -24,7 +24,7 @@ function TitleVideo() {
                 <Tippy 
                 delay={[800, 700]}
                 interactive
-                placement= {["bottom", "left"]}
+                offset={[-280, -75]}
                 render={renderAccountPreview}
                 >
                     <span className={cx('title-user')}>
