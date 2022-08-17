@@ -8,6 +8,7 @@ const useElementOnScreen = (options, targetRef) => {
     const optionsMemo = useMemo(() => {
         return options;
     }, [options]);
+    
     useEffect(() => {
         const observer = new IntersectionObserver(callbackFunction, optionsMemo);
         const currentTarget = targetRef.current;

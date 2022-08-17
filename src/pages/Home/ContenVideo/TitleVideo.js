@@ -1,11 +1,11 @@
 import Tippy from '@tippyjs/react/headless';
-
 import classNames from 'classnames/bind';
 import Button from '~/components/Button';
 import styles from './VideoConten.module.scss';
 import VideoPreview from './VideoPreview';
 
 const cx = classNames.bind(styles);
+
 function TitleVideo() {
     const renderAccountPreview = (props) => {
         return (
@@ -13,6 +13,7 @@ function TitleVideo() {
             <VideoPreview />
            </div>
           )}
+
     return (
         <div className={cx('title-conten')} tabIndex="-1">
             <img
@@ -21,6 +22,7 @@ function TitleVideo() {
                 alt="avatar"
             ></img>
             <div className={cx('title-all')}>
+
                 <Tippy 
                 delay={[800, 700]}
                 interactive
@@ -49,7 +51,7 @@ function TitleVideo() {
                 </Button>
             </div>
         </div>
-    );
+    )
 }
 
 export default TitleVideo;
