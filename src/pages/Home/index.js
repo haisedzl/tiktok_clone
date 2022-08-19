@@ -13,6 +13,7 @@ function Home( ) {
 
                      <TitleVideo />
                      <ContenVideo />
+
             </h2>         
     );
 }

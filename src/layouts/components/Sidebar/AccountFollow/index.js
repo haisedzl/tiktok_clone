@@ -44,8 +44,7 @@ function AccountFollow() {
                         <span className={cx('username')}>Solo Leveling</span>
                     </div>
                 </div>
-          </Tippy
-          >
+          </Tippy>
      </div>
     );
 }
