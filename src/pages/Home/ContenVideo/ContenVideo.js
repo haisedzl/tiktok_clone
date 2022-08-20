@@ -1,8 +1,8 @@
 import { useRef, useState, useEffect } from 'react';
+import Tippy from '@tippyjs/react';
 import useElementOnScreen from './HandleVideo';
 import classNames from 'classnames/bind';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
-import HeadlessTippy from '@tippyjs/react/headless';
 
 
 import { faCommentDots, faHeart, faShare } from '@fortawesome/free-solid-svg-icons';
@@ -76,24 +76,23 @@ function ContenVideo() {
                     loop
                     src={vid1}
                 />
-
-                
+        
                 <div className={cx('icon-conten')}>
+                <FontAwesomeIcon className={cx('icon',`${colortoggle}`)} icon={faHeart} onClick={HandleHeart}/>
+                <div className={cx('number')}>{numberHeart}</div>
+                
+                <FontAwesomeIcon className={cx('icon')} icon={faCommentDots} />
+                <div className={cx('number')}> 1111</div>
 
-                    <FontAwesomeIcon className={cx('icon',`${colortoggle}`)} icon={faHeart} onClick={HandleHeart}/>
-                       <div className={cx('number')}>{numberHeart}</div>
-
-                    <FontAwesomeIcon className={cx('icon')} icon={faCommentDots} />
-                       <div className={cx('number')}> 1111</div>
-
-                        
-
-                          <FontAwesomeIcon className={cx('icon')} icon={faShare} />
-                          <div className={cx('number')}> 1010</div>
-                       
+              
+                <FontAwesomeIcon className={cx('icon')} icon={faShare} />
+                <div className={cx('number')}> 1010</div>                           
+                
                 </div>
             </div>
         );
     }
 
 export default ContenVideo;
+
+

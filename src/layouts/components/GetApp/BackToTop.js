@@ -33,7 +33,7 @@ function BackToTop() {
                { backToTop && (
                 <div className={cx('up-top')}>
                            <button
-                           className={cx('icons')}
+                           className={cx('icon')}
                            onClick={scrollUp}>
                                <FontAwesomeIcon icon={faCircleArrowUp}/>
                            </button>

@@ -3,12 +3,16 @@
     padding: 20px 0 26px 0px;
     margin-left: -12px;
     min-height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
     padding-right: 12px;
+    position: fixed;
+    height: 580px;
 
-    
+    &:hover {
+
+        overflow-y: scroll;
+    }
 }
+
 
 // title
 
