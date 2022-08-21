@@ -1,8 +1,8 @@
 import { useRef, useState, useEffect } from 'react';
-import Tippy from '@tippyjs/react';
+// import Tippy from '@tippyjs/react';
 import useElementOnScreen from './HandleVideo';
 import classNames from 'classnames/bind';
-import { Wrapper as PopperWrapper } from '~/components/Popper';
+// import { Wrapper as PopperWrapper } from '~/components/Popper';
 
 
 import { faCommentDots, faHeart, faShare } from '@fortawesome/free-solid-svg-icons';
@@ -10,27 +10,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './VideoConten.module.scss';
 import vid1 from '~/assets/images/vid1.mp4'
-
+import numeral from 'numeral';
 
 
 const cx = classNames.bind(styles);
 
 function ContenVideo() {
   
-  const [numberHeart, setnumberHeart] = useState(2022)
+  const [numberHeart, setnumberHeart] = useState(20222)
   const [colorHeart, setcolorHeart] = useState(false)
   const colortoggle = colorHeart ? 'active': null;
    
   const HandleHeart = () => { 
-
+    
     setcolorHeart(colorHeart => !colorHeart)
-
-    if(numberHeart <=  2022) {
+    
+    if(numberHeart <=  20222) {
       setnumberHeart(numberHeart + 1)
       
     } else {
       setnumberHeart(numberHeart - 1)
     }}
+
+    const number = numeral(numberHeart).format('0.0 a')
+
+
     
   const videoRef = useRef();
   const [playing, setPlaying] = useState(false);
@@ -79,7 +83,7 @@ function ContenVideo() {
         
                 <div className={cx('icon-conten')}>
                 <FontAwesomeIcon className={cx('icon',`${colortoggle}`)} icon={faHeart} onClick={HandleHeart}/>
-                <div className={cx('number')}>{numberHeart}</div>
+                <div className={cx('number')}>{number}</div>
                 
                 <FontAwesomeIcon className={cx('icon')} icon={faCommentDots} />
                 <div className={cx('number')}> 1111</div>
