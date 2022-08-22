@@ -21,10 +21,10 @@ function ContenVideo() {
   const [colorHeart, setcolorHeart] = useState(false)
 
   const colortoggle = colorHeart ? 'active': null;
-  setcolorHeart(colorHeart => !colorHeart)
-
+  
   const HandleHeart = () => { 
-     
+    
+    setcolorHeart(colorHeart => !colorHeart)
     if(numberHeart <=  20222) {
       setnumberHeart(numberHeart + 1)
       
