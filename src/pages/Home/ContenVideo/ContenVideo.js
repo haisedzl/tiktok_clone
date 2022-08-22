@@ -19,12 +19,12 @@ function ContenVideo() {
   
   const [numberHeart, setnumberHeart] = useState(20222)
   const [colorHeart, setcolorHeart] = useState(false)
+
   const colortoggle = colorHeart ? 'active': null;
-   
+  setcolorHeart(colorHeart => !colorHeart)
+
   const HandleHeart = () => { 
-    
-    setcolorHeart(colorHeart => !colorHeart)
-    
+     
     if(numberHeart <=  20222) {
       setnumberHeart(numberHeart + 1)
       
@@ -33,7 +33,6 @@ function ContenVideo() {
     }}
 
     const number = numeral(numberHeart).format('0.0 a')
-
 
     
   const videoRef = useRef();
