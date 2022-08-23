@@ -1,0 +1,62 @@
+.wapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.video {
+    text-align: center;
+    width: 226px;
+    height: 302px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.title-all {
+    position: absolute;
+    background: transparent;
+    bottom: 0px;
+    height: 200px;
+    display: flex;
+    box-sizing: border-box;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 58px 20px;
+    text-align: center;
+}
+.info {
+    user-select: none;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.name {
+    padding-top: 12px;
+    color: rgb(255, 255, 255);
+    line-height: 25px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.username {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.check {
+    margin-left: 6px;
+    color: rgb(32, 213, 236);
+}

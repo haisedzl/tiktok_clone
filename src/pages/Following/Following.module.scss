@@ -1,3 +1,8 @@
 .wapper {
-    margin-left: 400px;    
+    margin-top: 45px;
+    width: 720px;
+    margin-left: 375px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
 }
